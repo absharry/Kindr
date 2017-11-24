@@ -19,8 +19,40 @@
     padding:10px;
 }
 
+.businessLoginSpan{
+    margin-top:5px;
+    width:100%;
+    text-align:center;
+    display:block;
+}
+
+#businessLoginButtonLogin{
+    margin-right:10px;
+}
+
+#businessLoginButtonRegister{
+    margin-left:10px;
+}
+
+#businessLoginMainDiv {
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:25px;
+    padding:25px;
+}
+
 #charityDetailsMainDiv{
     background-color:lightgray;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+#charityDetailsImage{
+    margin-top:10px;
+}
+
+#charityDetailsHelpCharityButton{
+    margin-top:10px;
+    margin-left:-10px;
 }
