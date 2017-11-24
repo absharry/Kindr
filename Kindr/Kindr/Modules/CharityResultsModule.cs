@@ -20,14 +20,9 @@ namespace Kindr.Modules
             return this.View["CharityResults"].WithModel(results);
         }
 
-        private CharityResultsModel GetResultsData()
+        private List<CharityModel> GetResultsData()
         {
-            var results = new CharityResultsModel();
-            results.Charities.Add(new Charity { Name = "Dogs Trust"});
-            results.Charities.Add(new Charity { Name = "Cat 4 Life" });
-
-
-            return results;
+            return (List<CharityModel>)HttpContext.Current.Application["CharityModels"];
         }
     }
 }
