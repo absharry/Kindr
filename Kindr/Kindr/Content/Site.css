@@ -2,6 +2,10 @@
 
 .navbar{
 }
+body {
+    padding-top: 50px;
+}
+
 
 .parallax {
     /* The image used */
@@ -35,21 +39,17 @@
 }
 
 #businessLoginMainDiv {
-    background-color: white;
-    border: 3px solid orange;
+    background-color: lightgray;
+    border: 1px solid black;
     border-radius: 5px;
-    margin: 25px;
-    padding: 25px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin:25px;
+    padding:25px;
 }
 
-#charityDetailsMainDiv {
-    background-color: white;
-    border: 3px solid orange;
+#charityDetailsMainDiv{
+    background-color:lightgray;
+    border: 1px solid black;
     border-radius: 5px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    margin:25px;
-    margin-bottom:10px;
 }
 
 #charityDetailsImage{
@@ -57,5 +57,6 @@
 }
 
 #charityDetailsHelpCharityButton{
-    margin-left:10px;
+    margin-top:10px;
+    margin-left:-10px;
 }
