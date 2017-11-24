@@ -16,7 +16,7 @@ namespace Kindr.Modules
 
         public dynamic GetResults()
         {
-            var results = new CharityResultsViewModel { Charities = GetResultsData() };
+            var results = GetResultsData();
             return this.View["CharityResults"].WithModel(results);
         }
 
