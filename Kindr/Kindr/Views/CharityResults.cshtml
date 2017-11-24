@@ -12,13 +12,13 @@
 	</div>
     <div class="row">
         <div class="col-sm-12">
-            @foreach(var charity in Model.Charities)
+            @foreach(var charity in Model)
             {
     			<div class="panel panel-default">
                     <div class="panel-body">
 					    <div class="row">
     						<div class="col-xs-2">
-							<img src="http://i.imgur.com/adIpFYY.jpg" class="img-responsive"/>
+							<img src="http://i.imgur.com/adIpFYY.jpg" class="img-responsive img-rounded"/>
     						</div>
 	                        <div class="col-xs-10">
 		                        <h2>@charity.Name</h2>

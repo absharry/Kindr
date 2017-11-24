@@ -31,7 +31,10 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            }));
+            })
+            {
+                Name = "Dogs Trust"
+            });
 
             models.Add(new CharityModel(new List<TagModel>()
             {
@@ -39,7 +42,9 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            }));
+            }){
+                Name = "Big C"
+            });
 
             models.Add(new CharityModel(new List<TagModel>()
             {
@@ -47,7 +52,10 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            }));
+            })
+            {
+                Name = "Big C"
+            });
 
             models.Add(new CharityModel(new List<TagModel>()
             {
@@ -55,7 +63,10 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            }));
+            })
+            {
+                Name = "Big C"
+            });
 
             models.Add(new CharityModel(new List<TagModel>()
             {
@@ -63,7 +74,10 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            }));
+            })
+            {
+                Name = "Big C"
+            });
 
             return models;
         }

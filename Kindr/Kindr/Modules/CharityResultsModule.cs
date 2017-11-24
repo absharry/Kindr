@@ -16,17 +16,13 @@ namespace Kindr.Modules
 
         public dynamic GetResults()
         {
-            var results = GetResultsData();
+            var results = new CharityResultsViewModel { Charities = GetResultsData() };
             return this.View["CharityResults"].WithModel(results);
         }
 
-        private CharityResultsViewModel GetResultsData()
+        private List<CharityModel> GetResultsData()
         {
-            var results = new CharityResultsViewModel();
-            results.Charities.Add(new CharityModel { Name = "Dogs Trust"});
-            results.Charities.Add(new CharityModel { Name = "Cat 4 Life" });
-
-            return results;
+            return (List<CharityModel>)HttpContext.Current.Application["CharityModels"];
         }
     }
 }
