@@ -25,60 +25,52 @@ namespace Kindr
         {
             var models = new List<CharityModel>();
 
-            models.Add(new CharityModel(new List<TagModel>()
+            var emptyTagModel = new List<TagModel>()
             {
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
                 new TagModel() { },
-            })
+            };
+
+            models.Add(new CharityModel()
             {
-                Name = "Dogs Trust",Id=0,
-                Description = "Dogs Trust, formerly known as the National Canine Defence League, is an animal welfare charity and humane society in the United Kingdom which specialises in the well-being of dogs.",
-                ImageUrl= "https://pbs.twimg.com/profile_images/931550545860616199/hEit2Niu.jpg"
+                Name = "Dogs Trust",
+                Id = 0,
+                Tags = emptyTagModel,
+                ImageUrl = "http://i.imgur.com/adIpFYY.jpg",
+                Description = "Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri. "
             });
 
-            models.Add(new CharityModel(new List<TagModel>()
-            {
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-            }){
-                Name = "Big C"
+            models.Add(new CharityModel(){
+                Name = "Big C",
+                Tags = emptyTagModel,
+                ImageUrl = "http://i.imgur.com/adIpFYY.jpg",
+                Description = "Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri. "
             });
 
-            models.Add(new CharityModel(new List<TagModel>()
+            models.Add(new CharityModel()
             {
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-            })
-            {
-                Name = "Big C"
+                Name = "MIND",
+                Tags = emptyTagModel,
+                ImageUrl = "http://i.imgur.com/adIpFYY.jpg",
+                Description = "Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri. "
             });
 
-            models.Add(new CharityModel(new List<TagModel>()
+            models.Add(new CharityModel()
             {
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-            })
-            {
-                Name = "Big C"
+                Name = "Dementia Together",
+                Tags = emptyTagModel,
+                ImageUrl = "http://i.imgur.com/adIpFYY.jpg",
+                Description = "Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri. "
             });
 
-            models.Add(new CharityModel(new List<TagModel>()
+            models.Add(new CharityModel()
             {
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-                new TagModel() { },
-            })
-            {
-                Name = "Big C"
+                Name = "Cancer Research",
+                Tags = emptyTagModel,
+                ImageUrl = "http://i.imgur.com/adIpFYY.jpg",
+                Description = "Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri. "
             });
 
             return models;
