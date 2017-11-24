@@ -1,18 +1,43 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+
+.navbar{
+    background-color: orangered;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.businessLoginSpan{
+    margin-top:5px;
+    width:100%;
+    text-align:center;
+    display:block;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+#businessLoginButtonLogin{
+    margin-right:10px;
 }
 
+#businessLoginButtonRegister{
+    margin-left:10px;
+}
+
+#businessLoginMainDiv {
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:25px;
+    padding:25px;
+}
+
+#charityDetailsMainDiv{
+    background-color:lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#charityDetailsImage{
+    margin-top:10px;
+}
+
+#charityDetailsHelpCharityButton{
+    margin-top:10px;
+    margin-left:-10px;
+}
