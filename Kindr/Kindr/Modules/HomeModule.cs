@@ -2,6 +2,7 @@
 using Nancy;
 using System.Collections.Generic;
 using System.Web;
+using System.Linq;
 
 namespace Kindr.Modules
 {
@@ -11,7 +12,7 @@ namespace Kindr.Modules
         {
             Get["/"] = x => GetHome();
             Get["/business_login"] = x => GetBusinessLogin();
-            Get["/charity_details"] = x => GetCharityDetails();
+            Get["/charity_details/{id}"] = x => GetCharityDetails(x.id);
         }
 
         public dynamic GetHome()
@@ -24,14 +25,17 @@ namespace Kindr.Modules
             return this.View["BusinessLogin"];
         }
 
-        public dynamic GetCharityDetails()
+        public dynamic GetCharityDetails(int id)
         {
-            return this.View["CharityDetails"] ;
+            var model = GetResultsData(id);
+            return this.View["CharityDetails"].WithModel(model);
         }
 
-        private List<CharityModel> GetResultsData()
+        private CharityModel GetResultsData(int id)
         {
-            return (List<CharityModel>)HttpContext.Current.Application["CharityModels"];
+            var charities = (IList<CharityModel>)HttpContext.Current.Application["CharityModels"];
+            var charity = charities.FirstOrDefault(e => e.Id == id);
+            return charity;
         }
     }
 }

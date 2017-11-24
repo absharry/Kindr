@@ -4,19 +4,19 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-push-2" id="charityDetailsMainDiv">
-            <span><img src="" alt="Charity Logo" align="middle"/><p>Charity Name</p></span>
-            <span><p>About</p><p> - Charity About Section - </p></span>
-            <p>Accomplishments</p>
+            <span><img id="charityDetailsImage" src="@Model.ImageUrl" alt="Charity Logo" align="middle" width="128px" height="128px;"/><h3>@Model.Name</h3></span>
+            <h3>About</h3><p> @Model.Description </p>
+            <h3>Accomplishments</h3>
             <p> - Charity Accomplishments - </p>
-            <p>Future Campaigns</p>
+            <h3>Future Campaigns</h3>
             <p> - Charity Future Campaigns - </p>
-            <p>Urgent Requirements</p>
+            <h3>Urgent Requirements</h3>
             <p> - Charity Urgent Requirements - </p>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-8 col-sm-push-2">
-        <button type="button" class="btn btn-primary">Start Helping</button>
+        <button id="charityDetailsHelpCharityButton" type="button" class="btn btn-primary">Start Helping</button>
             </div>
     </div>
 </div>
