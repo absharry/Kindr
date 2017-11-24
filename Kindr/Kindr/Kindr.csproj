@@ -131,6 +131,10 @@
     <Compile Include="Models\Charity.cs" />
     <Compile Include="Models\CharityResultsModel.cs" />
     <Compile Include="Modules\CharityResultsModule.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Models\BusinessModel.cs" />
+    <Compile Include="Models\CharityModel.cs" />
+    <Compile Include="Models\TagModel.cs" />
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
