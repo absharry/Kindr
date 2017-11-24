@@ -7,6 +7,9 @@ using System.Web;
 
 namespace Kindr.Modules
 {
+    /// <summary>
+    /// This is where you get all the information on the 'Results' Page :D
+    /// </summary>
     public class CharityResultsModule : NancyModule
     {
         public CharityResultsModule()
