@@ -113,9 +113,9 @@
     <None Include="packages.config" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\CharityResults.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Search.cshtml" />
     <Content Include="Views\BusinessLogin.cshtml" />
     <Content Include="Views\CharityDetails.cshtml" />
     <None Include="Web.Debug.config">
@@ -124,6 +124,8 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\parallax.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -137,9 +139,13 @@
     <Compile Include="Models\CharityModel.cs" />
     <Compile Include="Models\TagModel.cs" />
     <Compile Include="Modules\HomeModule.cs" />
+    <Compile Include="Modules\SearchModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Content\Images\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

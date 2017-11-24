@@ -1,15 +1,53 @@
 ﻿@{
     Layout = "_Layout";
 }
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8 col-sm-push-2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ex sit amet nisl egestas aliquet. Ut ultricies malesuada urna ut tincidunt. Quisque commodo tortor tellus, eget molestie dui viverra eget. Nullam pretium nibh in condimentum rhoncus. Suspendisse ultrices diam odio. Morbi sed felis nisl. Nulla non arcu mauris. Integer feugiat dictum nibh ut lobortis. Sed at sodales tortor. Morbi et sem vel ipsum faucibus sagittis. Nulla dictum a mi eget facilisis. Curabitur eget leo ut tortor elementum faucibus. Suspendisse at enim id quam congue malesuada vitae ac sem. </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-8 col-sm-push-2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ex sit amet nisl egestas aliquet. Ut ultricies malesuada urna ut tincidunt. Quisque commodo tortor tellus, eget molestie dui viverra eget. Nullam pretium nibh in condimentum rhoncus. Suspendisse ultrices diam odio. Morbi sed felis nisl. Nulla non arcu mauris. Integer feugiat dictum nibh ut lobortis. Sed at sodales tortor. Morbi et sem vel ipsum faucibus sagittis. Nulla dictum a mi eget facilisis. Curabitur eget leo ut tortor elementum faucibus. Suspendisse at enim id quam congue malesuada vitae ac sem. </p>
-        </div>
-    </div>
+
+<script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build tween
+    var tween = TweenMax.from("#animate", 0.5, {autoAlpha: 0, scale: 0.7});
+
+    // build scene
+    var scene = new ScrollMagic.Scene({triggerElement: "a#top", duration: 200, triggerHook: "onLeave"})
+                    .setTween(tween)
+                    .addTo(controller);
+
+    // change behaviour of controller to animate scroll instead of jump
+    controller.scrollTo(function (newpos) {
+        TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+    });
+
+    //  bind scroll to anchor links
+    $(document).on("click", "a[href^='#']", function (e) {
+        var id = $(this).attr("href");
+        if ($(id).length > 0) {
+            e.preventDefault();
+
+            // trigger scroll
+            controller.scrollTo(id);
+
+                // if supported by the browser we can even update the URL.
+            if (window.history && window.history.pushState) {
+                history.pushState("", document.title, id);
+            }
+        }
+    });
+</script>
+<div id="top" class="parallax"></div>
+
+<div id="about-us" style="height:1000px;background-color:red;font-size:36px">
+	
+<h2>About Us</h2>
+</div>
+
+<div id="featured" style="height:1000px;background-color:blue;font-size:36px">
+<h2>Featured Product</h2>
+
+</div>
+
+<div id="contact-us" style="height:1000px;background-color:purple;font-size:36px">
+<h2>Contact Us</h2>
+
 </div>
