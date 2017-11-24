@@ -24,6 +24,8 @@ namespace Kindr.Modules
         {
             var results = new CharityResultsModel();
             results.Charities.Add(new Charity { Name = "Dogs Trust"});
+            results.Charities.Add(new Charity { Name = "Cat 4 Life" });
+
 
             return results;
         }

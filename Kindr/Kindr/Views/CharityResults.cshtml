@@ -3,10 +3,37 @@
 
 }
 
-<h2>Charity Results</h2>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Charity Results</h2>
 
-@foreach(var charity in Model.Charities)
-{
-    <p>@charity.Name</p>
-}
+		</div>
+	</div>
+    <div class="row">
+        <div class="col-sm-12">
+            @foreach(var charity in Model.Charities)
+            {
+    			<div class="panel panel-default">
+                    <div class="panel-body">
+					    <div class="row">
+    						<div class="col-xs-2">
+							<img src="http://i.imgur.com/adIpFYY.jpg" class="img-responsive"/>
+    						</div>
+	                        <div class="col-xs-10">
+		                        <h2>@charity.Name</h2>
+							    <p>
+								    Mentitum tincidunt sed an, mei no scaevola incorrupte, qui augue iuvaret fabellas ex. Tale iriure similique nam ei, an dicat scripta tincidunt mea, sanctus tacimates accommodare in pro. Sed brute assentior ne. Ad omnis viris veniam quo, eam malis eligendi ne. Tota nemore et pri.
+                                </p>
+                            </div>  
+
+					    </div>
+                    </div>
+                </div>
+            }        
+		</div>
+    </div>
+   
+</div>
+
 
