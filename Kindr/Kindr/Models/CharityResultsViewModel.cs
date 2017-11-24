@@ -5,10 +5,8 @@ using System.Web;
 
 namespace Kindr.Models
 {
-    public class CharityResultsModel
+    public class CharityResultsViewModel
     {
-    
-
-        public List<Charity> Charities { get; set; } = new List<Charity>();
+        public List<CharityModel> Charities { get; set; } = new List<CharityModel>();
     }
 }
