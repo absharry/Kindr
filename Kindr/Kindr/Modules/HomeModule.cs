@@ -17,6 +17,7 @@ namespace Kindr.Modules
 
         public dynamic GetHome()
         {
+            ViewBag.Title = "Home";
             return this.View["Home"];
         }
 
@@ -27,6 +28,7 @@ namespace Kindr.Modules
 
         public dynamic GetCharityDetails(int id)
         {
+            ViewBag.Title = "Charity Details";
             var model = GetResultsData(id);
             return this.View["CharityDetails"].WithModel(model);
         }

@@ -6,6 +6,12 @@
     padding-right:10px;
 }
 
+
+
+#bs-example-navbar-collapse-1 a:hover, .active {
+    color: #45759B !important;
+}
+
 .navbar-header{
     padding:0px !important;
 }
@@ -19,8 +25,12 @@
         font-size: 45px;
         font-weight:bold;
         margin-top: 50px;
-        color: #F08348;
+        color: white;
     }
+
+#iAmA {
+    font-size: 30px !important;
+}
 
     #socialMediaDiv{
         margin-top:50px;
@@ -33,10 +43,10 @@
     }
 
 #businessLoginButton, #charityLoginButton {
-    position:relative;
-    color: #F08348;
-    background-color: white;
-    border: 3px solid #F08348;
+    position: relative;
+    color: white;
+    background-color: #F08348;
+    border-color: #F08348;
     border-radius: 3px;
     font-size: 30px;
     margin-top: 50px;
@@ -49,10 +59,12 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);
+
+    padding-left:50px;
+    padding-right:50px;
 }
 
     #businessLoginButton:hover, #charityLoginButton:hover {
-        padding:20px;
         z-index: 2;
         -webkit-transition: all 200ms ease-in;
         -webkit-transform: scale(1.5);
@@ -62,8 +74,8 @@
         -moz-transform: scale(1.5);
         transition: all 200ms ease-in;
         transform: scale(1.5);  
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
 #businessLoginButton{
@@ -129,7 +141,7 @@ body {
 
 #about-us {
     background-color: #C6D4DF;
-    color:black;
+    color: black;
 }
 
 #featured {
