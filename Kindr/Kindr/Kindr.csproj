@@ -121,6 +121,7 @@
     <Content Include="Views\Search.cshtml" />
     <Content Include="Views\BusinessLogin.cshtml" />
     <Content Include="Views\CharityDetails.cshtml" />
+    <Content Include="Views\Dashboard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -136,6 +137,7 @@
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Models\CharityResultsViewModel.cs" />
+    <Compile Include="Models\DashboardModel.cs" />
     <Compile Include="Modules\CharityResultsModule.cs" />
     <Compile Include="Enums\Enums.cs" />
     <Compile Include="Models\BusinessModel.cs" />
