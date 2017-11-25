@@ -45,7 +45,7 @@ namespace Kindr
                 new TagModel() { },
                 new TagModel() { },
             }){
-                Name = "Big C"
+                Name = "Big C",Id=1
             });
 
             models.Add(new CharityModel(new List<TagModel>()
@@ -56,7 +56,7 @@ namespace Kindr
                 new TagModel() { },
             })
             {
-                Name = "Big C"
+                Name = "Big C",Id=2
             });
 
             models.Add(new CharityModel(new List<TagModel>()
@@ -67,7 +67,7 @@ namespace Kindr
                 new TagModel() { },
             })
             {
-                Name = "Big C"
+                Name = "Big C",Id=3
             });
 
             models.Add(new CharityModel(new List<TagModel>()
@@ -78,7 +78,7 @@ namespace Kindr
                 new TagModel() { },
             })
             {
-                Name = "Big C"
+                Name = "Big C",Id=4
             });
 
             return models;
