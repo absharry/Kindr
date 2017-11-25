@@ -7,6 +7,24 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
+#tagline{
+    text-align:right;
+    position:absolute;
+    width:50%;
+    top:50%;
+    left:45%;
+    font-weight:bold;
+    font-size:75px;
+}
+
+#upButton{
+    position:absolute;
+    width:5%;
+    left:45%;
+    height:5%;
+    top:95%;
+}
+
 
 .parallax {
     /* The image used */
@@ -78,4 +96,36 @@ body {
 
 #charityDetailsHelpCharityButton{
     margin-left:10px;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.pulse {
+    animation-name: pulse;
 }
