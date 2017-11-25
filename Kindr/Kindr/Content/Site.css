@@ -1,4 +1,6 @@
-﻿
+﻿.container{
+    padding-top:65px;
+}
 
 .navbar{
     font-size:35px;
@@ -8,8 +10,8 @@
     padding:0px !important;
 }
 
-#homecontentdiv h1, p{
-    font-size:30px;
+#homecontentdiv h1, #homecontentdiv p {
+    font-size: 30px;
 }
 
 #businessLoginButton, #charityLoginButton {

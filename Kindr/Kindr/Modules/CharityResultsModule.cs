@@ -19,10 +19,9 @@ namespace Kindr.Modules
 
         public dynamic GetResults()
         {
-            var maxInList = 3;
             var results = GetResultsData();
-        
-            return this.View["CharityResults"].WithModel(results.Take(maxInList));
+
+            return this.View["CharityResults"].WithModel(results);
         }
 
         private List<CharityModel> GetResultsData()
