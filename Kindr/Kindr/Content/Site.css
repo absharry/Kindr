@@ -16,6 +16,10 @@
     padding-top: 10px;
 }
 
+.case-study-body img {
+    max-height: 230px;
+}
+
 .case-study .logos {
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
