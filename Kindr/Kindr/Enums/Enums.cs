@@ -20,6 +20,5 @@ namespace Kindr.Enums
         Education,
 
         ArtsAndCulture
-
     }
 }

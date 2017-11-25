@@ -25,6 +25,12 @@ namespace Kindr.Models
 
         public decimal FundsRaised { get; set; }
 
+        public string Cause{ get; set; }
+
+        public string SupportF { get; set; }
+
+        public string pecent { get; set; }
+
         public List<TagModel> Tags { get; set; }
 
 
