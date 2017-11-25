@@ -6,6 +6,9 @@ body {
     padding-top: 50px;
 }
 
+.btn-default {
+    background-color: orange;
+}
 
 .parallax {
     /* The image used */

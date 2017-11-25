@@ -2,11 +2,16 @@
     Layout = "_Layout";
 
 }
-
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<style>
+    h2, h3{
+        margin-top: 10px;
+	}
+</style>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<h2>Charity Results</h2>
+			<h1>Your Results</h1>
 
 		</div>
 	</div>
@@ -22,16 +27,93 @@
     						</div>
 	                        <div class="col-xs-10">
 		                        <h2>@charity.Name</h2>
-							    <p>@charity.Description</p>
-                            </div>  
+						        <h3>Type: @charity.CharityType</h3>
+                                <p>@charity.Description</p>
+        						<div class="pull-right">
+                                    <button class="btn btn-default">View</button>
+                                    <button class="btn btn-default">Donate</button>
+                                </div>
+                            </div> 
+    						
 
 					    </div>
+    				
                     </div>
                 </div>
             }        
 		</div>
     </div>
-   
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel panel-default" style="border: 3px solid orange;">
+                <div class="panel-body">
+                    <div id="employee-chart-container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto">
+				    </div>
+                </div>
+			</div>
+		</div>
+	</div>
 </div>
 
+<script>
+// Build the chart
+Highcharts.chart('employee-chart-container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie',
+	    
+    },
+    title: {
+        text: 'Your Employee Breakdown'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    legend: {
+        align: 'left',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: 0,
+        y: 100
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: false
+            },
+            showInLegend: true
+        }
+    },
+    series: [{
+        name: 'Sector',
+        colorByPoint: true,
+        data: [{
+            name: 'Health',
+            y: 56.33
+        }, {
+            name: 'Overseas',
+            y: 24.03,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'Animal',
+            y: 10.38
+        }, {
+            name: 'Environmental',
+            y: 4.77
+        }, {
+            name: 'Local',
+            y: 0.91
+        }, {
+            name: 'Child',
+            y: 0.2
+        }]
+    }]
+});
+</script>
 
