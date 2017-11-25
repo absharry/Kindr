@@ -6,7 +6,26 @@
     padding-right:10px;
 }
 
+.case-studies {
+    margin-top: 30px;
+    background: rgba(255,255,255,0.5);
+    padding: 20px 40px;
+}
 
+.case-study-body {
+    padding-top: 10px;
+}
+
+.case-study .logos {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.case-study .logos img {
+    display: inline-block;
+    height: 40px;
+    width: auto;
+}
 
 #bs-example-navbar-collapse-1 a:hover, .active {
     color: #45759B !important;

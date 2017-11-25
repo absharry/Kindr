@@ -17,17 +17,16 @@
     </div>
 
     <div class="row">
-        
-        <h2>My Causes</h2>
         <div class="col-xs-12">
+            <h2>My Causes</h2>
             <div class="panel panel-default" style="border: 3px solid orange">
                 <div class="panel-body">
-                    
+
                     @foreach (var item in Model.ActiveCharities)
                     {
 
                         <div style="font-size: 16px; padding: 20px; border: 1px solid black">
-                            <img src="@item.ImageUrl" style="width:40px; height: 40px; margin-right: 20px" />
+                            <img src="@item.ImageUrl" style="width: 40px; height: 40px; margin-right: 20px"/>
                             @item.Name
                             <button type="button" class="btn btn-default pull-right">
                                 <i class="glyphicon glyphicon-search"></i>
@@ -38,7 +37,7 @@
                         </div>
                     }
 
-                    
+
                 </div>
             </div>
         </div>
