@@ -52,6 +52,9 @@ body {
     top:95%;
 }
 
+.btn-default {
+    background-color: orange;
+}
 
 .parallax {
     /* The image used */
