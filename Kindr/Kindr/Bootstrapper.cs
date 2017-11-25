@@ -35,6 +35,7 @@ namespace Kindr
 
             models.Add(new CharityModel()
             {
+                Rank = 82,
                 Name = "Dogs Trust",
                 Id = 0,
                 Tags = emptyTagModel,
@@ -45,6 +46,7 @@ namespace Kindr
             });
 
             models.Add(new CharityModel(){
+                Rank = 44,
                 Name = "The Salvation Army",
                 Tags = emptyTagModel,
                 Cause = "Community, Homeless",
@@ -55,6 +57,7 @@ namespace Kindr
 
             models.Add(new CharityModel()
             {
+                Rank = 2,
                 Name = "RSPCA",
                 Tags = emptyTagModel,
                 Cause = "Community, Animal welfare",
@@ -65,6 +68,7 @@ namespace Kindr
 
             models.Add(new CharityModel()
             {
+                Rank = 76,
                 Name = "CoppaFeel!",
                 Tags = emptyTagModel,
                 Cause = "Disease Research, Community",
@@ -75,6 +79,7 @@ namespace Kindr
 
             models.Add(new CharityModel()
             {
+                Rank = 34,
                 Name = "Bill & Melinda Gates Foundation",
                 Tags = emptyTagModel,
                 Cause = "Children, Poverty",
@@ -84,6 +89,7 @@ namespace Kindr
             });
             models.Add(new CharityModel()
             {
+                Rank = 98,
                 Name = "SOS Children's Villages",
                 Tags = emptyTagModel,
                 Cause = "Children",
@@ -93,6 +99,7 @@ namespace Kindr
             });
             models.Add(new CharityModel()
             {
+                Rank = 32,
                 Name = "Marie Curie",
                 Tags = emptyTagModel,
                 Cause = "Medical",
@@ -102,6 +109,7 @@ namespace Kindr
             });
             models.Add(new CharityModel()
             {
+                Rank = 45,
                 Name = "Norfolk Community Foundation",
                 Tags = emptyTagModel,
                 Cause = "Community",
@@ -111,6 +119,7 @@ namespace Kindr
             });
             models.Add(new CharityModel()
             {
+                Rank = 12,
                 Name = "Mind",
                 Tags = emptyTagModel,
                 Cause = "Community, Medical",
@@ -120,6 +129,7 @@ namespace Kindr
             });
             models.Add(new CharityModel()
             {
+                Rank = 9,
                 Name = "Shelter",
                 Tags = emptyTagModel,
                 Cause = "Community, Homless",
