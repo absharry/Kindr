@@ -99,6 +99,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\home_scripts.js" />
+    <Content Include="Content\Images\logotransparent.png" />
+    <Content Include="Content\Images\uparrow.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap.js" />

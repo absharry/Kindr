@@ -1,20 +1,47 @@
 ﻿
 
 .navbar{
+    font-size:35px;
+}
+
+.navbar-header{
+    padding:0px !important;
+}
+
+#homecontentdiv h1, p{
+    font-size:30px;
+}
+
+#businessLoginButton, #charityLoginButton {
+    color: #F08348;
+    background-color: white;
+    border: 1px solid #F08348;
+    border-radius:3px;
+    font-size:30px;
+}
+
+.navbar-nav li a {
+    line-height: 94px;
+    color: #F08348 !important;
 }
 body {
     padding-top: 50px;
     font-family: 'Muli', sans-serif;
 }
 
-#tagline{
-    text-align:right;
-    position:absolute;
-    width:50%;
-    top:50%;
-    left:45%;
-    font-weight:bold;
-    font-size:75px;
+#logo{
+    mix-blend-mode:multiply;
+}
+
+#tagline {
+    text-align: right;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 45%;
+    font-weight: bold;
+    font-size: 75px;
+    color: #F08348;
 }
 
 #upButton{
