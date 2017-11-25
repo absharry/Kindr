@@ -29,21 +29,22 @@
     						</div>
 	                        <div class="col-xs-10">
 							<div class="row">
-                                <div class="col-xs-6">
-                                     <h2>@charity.Name</h2>
+                                <div class="col-xs-10">
+                                     <h2>@charity.Name - Match @charity.Rank%</h2>
 								</div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-2">
 								<div class="pull-right">
-                                            @if(charity.SupportF.Contains("Money")){
-                                                <span class="glyphicon glyphicon-gbp" aria-hidden="true"></span>
-                                            }
-                                            @if(charity.SupportF.Contains("Services")){
-                                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                                            }
-                                            @if(charity.SupportF.Contains("Space")){
-                                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-                                            }
-                                        </div>
+										<span >Looking for:</span> 
+                                        @if(charity.SupportF.Contains("Money")){
+                                            <span class="glyphicon glyphicon-gbp" aria-hidden="true"></span>
+                                        }
+                                        @if(charity.SupportF.Contains("Services")){
+                                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                        }
+                                        @if(charity.SupportF.Contains("Space")){
+                                            <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                                        }
+                                </div>
 								</div>
 								</div>
 						        <h3>Cause: @charity.Cause</h3>
@@ -56,7 +57,7 @@
     									<div class="pull-right">
                                             <button class="btn btn-default">Find Out More</button>
                                             <button class="btn btn-default">
-										                                                <span class="glyphicon glyphicon-heart" style="font-size: 14px;" aria-hidden="true"></span>
+                                            <span class="glyphicon glyphicon-heart" style="font-size: 14px;" aria-hidden="true"></span>
 </button>
                                         </div>
                                     </div>

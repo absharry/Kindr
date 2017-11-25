@@ -78,6 +78,11 @@ body {
     mix-blend-mode:multiply;
 }
 
+.container {
+    padding-top: 65px;
+}
+
+
 #tagline {
     text-align: right;
     position: absolute;

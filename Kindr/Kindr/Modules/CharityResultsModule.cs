@@ -21,7 +21,7 @@ namespace Kindr.Modules
         {
             var results = GetResultsData();
 
-            return this.View["CharityResults"].WithModel(results);
+            return this.View["CharityResults"].WithModel(results.OrderByDescending(e => e.Rank));
         }
 
         private List<CharityModel> GetResultsData()

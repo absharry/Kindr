@@ -31,6 +31,9 @@ namespace Kindr.Models
 
         public string pecent { get; set; }
 
+        public int Rank { get; set; }
+
+
         public List<TagModel> Tags { get; set; }
 
 
