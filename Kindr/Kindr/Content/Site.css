@@ -2,22 +2,67 @@
 
 .navbar{
     font-size:35px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 .navbar-header{
     padding:0px !important;
 }
 
-#homecontentdiv h1, p{
-    font-size:30px;
+#homecontentdiv{
+    text-align:center;
+    margin-top:50px;
 }
 
+    #homecontentdiv h1, #homecontentdiv p {
+        font-size: 45px;
+        font-weight:bold;
+        margin-top: 50px;
+        color: #F08348;
+    }
+
+
 #businessLoginButton, #charityLoginButton {
+    position:relative;
     color: #F08348;
     background-color: white;
-    border: 1px solid #F08348;
-    border-radius:3px;
-    font-size:30px;
+    border: 3px solid #F08348;
+    border-radius: 3px;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+    #businessLoginButton:hover, #charityLoginButton:hover {
+        padding:20px;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);  
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+#businessLoginButton{
+    margin-right:25px;
+}
+
+#charityLoginButton{
+    margin-left:25px;
 }
 
 .navbar-nav li a {
@@ -44,13 +89,16 @@ body {
     color: #F08348;
 }
 
-#upButton{
-    position:absolute;
-    width:5%;
-    left:45%;
-    height:5%;
-    top:95%;
+#upButton {
+    font-size: 75px;
+    color: #F08348;
+    position: absolute;
+    left: 50%;
+    height: 5%;
+    top: 90%;
+    text-shadow: 0px 0px 10px white;
 }
+
 
 .btn-default {
     background-color: orange;
